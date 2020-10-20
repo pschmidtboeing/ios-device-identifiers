@@ -23,9 +23,25 @@ yarn add jsonlint --dev
 yarn run jsonlint ios-device-identifiers.json
 ```
 
+To convert a gist in .txt format
+
+e.g
+ 
+    export RAW=
+    curl https://gist.github.com/adamawolf/3048717/raw/19b4cc0627ff669f1c4589324b9cb45e4948ec01/Apple_mobile_device_types.txt > ios-device-identifiers.txt 
+    bin/convert.sh  $(pwd)/ios-device-identifiers.txt
+
+and then review
+
 ## Acknowledgements:
+
+Many thanks to PRs from:
+
+* @pschmidtboeing
 
 Many thanks to the various gist-maintainers:
 
 * https://gist.github.com/adamawolf/3048717
 * https://gist.github.com/ReanimationXP/53c5a6a329397fb8fb0742d35112d345
+* https://gist.github.com/pschmidtboeing/0e6f5f4090089f3d01a7c52a89709d1e
+
